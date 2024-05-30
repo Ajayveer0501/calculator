@@ -1,0 +1,9 @@
+.InputBox{
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgb(244, 232, 238);
+}
+.outerbox{
+    padding: 0;
+}

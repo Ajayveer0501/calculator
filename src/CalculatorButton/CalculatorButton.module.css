@@ -1,0 +1,16 @@
+.button{
+    background-color: lightpink;
+    height: 60px;
+    width: 60px;
+    padding: 5px 1px 5px 1px;
+    margin: 1px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 2px solid violet;
+}
+.outerbox{
+    height: 60px;
+    width: 60px;
+    margin: 2px;
+}

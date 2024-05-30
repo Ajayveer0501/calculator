@@ -1,0 +1,12 @@
+.buttonPlacement{
+height: 50%;
+width: 40vb;
+border:5px solid pink;
+border-radius: 5vb;
+display: flex;
+flex-wrap: wrap;
+padding: 10px 10px 10 10px;
+margin: 0 10px 0 10px;
+justify-content: center;
+align-content: center;
+}
