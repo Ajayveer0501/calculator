@@ -1,8 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CalculatorButton from '../CalculatorButton/CalculatorButton'
 import styles from "./ButtonPlacement.module.css"
 
 const ButtonPlacement = () => {
+    const [input, setInput]= useState("")
+    const [result, setResult]= useState("")
+    const handleclick=(label)=>{
+        if(label==="C"){
+            setInput(" ");
+            setResult(" ");
+        }
+        else if(label==="="){
+            try{
+                setResult(eval(input));
+            }
+            catch{
+                setResult("Error")
+            }
+            
+        }
+        else{
+            setInput(input+label)
+        }
+    }
   return (
     <div className={styles.buttonPlacement}> 
     <CalculatorButton label={7} />
