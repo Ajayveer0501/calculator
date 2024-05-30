@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from "./CalculatorButton.module.css"
+import { useState } from 'react'
 
-const CalculatorButton = ({value}) => {
+const CalculatorButton = ({label,handleclick}) => {
   return (
     <div className={styles.outerbox} >
-        <button className={styles.button}>{value}</button>
+        <button className={styles.button} onClick={()=>handleclick(label)}>{label}</button>
     </div>
   )
 }

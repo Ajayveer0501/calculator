@@ -5,22 +5,22 @@ import styles from "./ButtonPlacement.module.css"
 const ButtonPlacement = () => {
   return (
     <div className={styles.buttonPlacement}> 
-    <CalculatorButton value={7} />
-    <CalculatorButton value={8} />
-    <CalculatorButton value={9} />
-    <CalculatorButton value={"+"} />
-    <CalculatorButton value={4} />
-    <CalculatorButton value={5} />
-    <CalculatorButton value={6} />
-    <CalculatorButton value={'-'} />
-    <CalculatorButton value={1} />
-    <CalculatorButton value={2} />
-    <CalculatorButton value={3} />
-    <CalculatorButton value={"*"} />
-    <CalculatorButton value={"C"} />
-    <CalculatorButton value={"0"} />
-    <CalculatorButton value={"="} />
-    <CalculatorButton value={"/"} />
+    <CalculatorButton label={7} />
+    <CalculatorButton label={8} />
+    <CalculatorButton label={9} />
+    <CalculatorButton label={"+"} />
+    <CalculatorButton label={4} />
+    <CalculatorButton label={5} />
+    <CalculatorButton label={6} />
+    <CalculatorButton label={'-'} />
+    <CalculatorButton label={1} />
+    <CalculatorButton label={2} />
+    <CalculatorButton label={3} />
+    <CalculatorButton label={"*"} />
+    <CalculatorButton label={"C"} />
+    <CalculatorButton label={"0"} />
+    <CalculatorButton label={"="} />
+    <CalculatorButton label={"/"} />
     </div>
   )
 }
