@@ -43,9 +43,9 @@ const ButtonPlacement = () => {
     <CalculatorButton label={"="} />
     <CalculatorButton label={"/"} /> */}
    {
-    buttonText.map((label)=>{
-        <CalculatorButton label={label} />        
-    })
+    buttonText.map((label, index)=>(
+        <CalculatorButton key={index} label={label} />        
+    ))
    }
     </div>
   )
