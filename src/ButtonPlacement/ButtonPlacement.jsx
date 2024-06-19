@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CalculatorButton from '../CalculatorButton/CalculatorButton'
 import styles from "./ButtonPlacement.module.css"
 
+let buttonText=['7','8','9','+','4','5','6','-','1','2','3','*','C','0','=','/']
 const ButtonPlacement = () => {
     const [input, setInput]= useState("")
     const [result, setResult]= useState("")
@@ -25,7 +26,7 @@ const ButtonPlacement = () => {
     }
   return (
     <div className={styles.buttonPlacement}> 
-    <CalculatorButton label={7} />
+    {/* <CalculatorButton label={7} />
     <CalculatorButton label={8} />
     <CalculatorButton label={9} />
     <CalculatorButton label={"+"} />
@@ -40,7 +41,12 @@ const ButtonPlacement = () => {
     <CalculatorButton label={"C"} />
     <CalculatorButton label={"0"} />
     <CalculatorButton label={"="} />
-    <CalculatorButton label={"/"} />
+    <CalculatorButton label={"/"} /> */}
+   {
+    buttonText.map((label)=>{
+        <CalculatorButton label={label} />        
+    })
+   }
     </div>
   )
 }
